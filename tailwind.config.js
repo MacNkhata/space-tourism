@@ -6,13 +6,28 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '375px',
+      md: '768px',
+      lg: '1440px',
+    },
+    fontFamily: {
+      bellefair: ['Bellefair', 'serif'],
+      barlow: ['Barlow', 'sans-serif'],
+      barlowCondensed: ['Barlow', 'sans-serif'],
+    },
     extend: {
+      colors: {
+        primary: 'rgb(11, 13, 23)',
+        secondary: 'rgb(208, 214, 249)',
+        accent: 'rgb(255, 255, 255)',
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'mobile-bg': "url('/images/home/background-home-mobile.jpg')",
+        'table-bg': "url('/images/home/background-home-tablet.jpg')",
+        'desktop-bg': "url('/images/home/background-home-desktop.jpg')",
       },
     },
   },
   plugins: [],
-}
+};
