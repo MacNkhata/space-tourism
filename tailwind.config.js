@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#0B0D17',
+        secondary: '#D0D6F9',
+        accent: '#FFFFFF',
+      },
+      fontFamily: {
+        serif: ['var(--font-bellefair)'],
+        sans: ['var(--font-barlow)'],
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'home-desktop': "url('/images/home/background-home-desktop.jpg')",
+        'home-tablet': "url('/images/home/background-home-tablet.jpg')",
+        'home-mobile': "url('/images/home/background-home-mobile.jpg')",
       },
     },
   },
   plugins: [],
-}
+};
