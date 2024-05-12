@@ -40,28 +40,42 @@ const Nav = () => {
                 className="absolute top-8 right-6"
                 onClick={() => setToggleMenu(false)}
               />
-              <div className="absolute top-36 left-8 flex flex-col">
+              <div className="absolute top-36 left-6 flex flex-col text-secondary text-base font-barlow uppercase tracking-widest w-[91.5%]">
                 <Link
                   href="/"
-                  className="text-secondary text-base font-barlow uppercase tracking-widest"
+                  className={`${
+                    pathname === '/' ? 'border-r-[4px] border-secondary' : ''
+                  }`}
                 >
                   <span className="font-bold">00</span> Home
                 </Link>
                 <Link
-                  href="/"
-                  className="text-secondary text-base font-barlow uppercase tracking-widest mt-8"
+                  href="/destination"
+                  className={`${
+                    pathname === '/destination'
+                      ? 'border-r-[5px] border-secondary mt-8'
+                      : 'mt-8'
+                  }`}
                 >
                   <span className="font-bold">01</span> Destination
                 </Link>
                 <Link
-                  href="/"
-                  className="text-secondary text-base font-barlow uppercase tracking-widest mt-8"
+                  href="/crew"
+                  className={`${
+                    pathname === '/crew'
+                      ? 'border-r-[5px] border-secondary mt-8'
+                      : 'mt-8'
+                  }`}
                 >
                   <span className="font-bold">02</span> Crew
                 </Link>
                 <Link
-                  href="/"
-                  className="text-secondary text-base font-barlow uppercase tracking-widest mt-8"
+                  href="/technology"
+                  className={`${
+                    pathname === '/technology'
+                      ? 'border-r-[5px] border-secondary mt-8'
+                      : 'mt-8'
+                  }`}
                 >
                   <span className="font-bold">03</span> Technology
                 </Link>
