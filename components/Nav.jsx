@@ -40,7 +40,7 @@ const Nav = () => {
                 className="absolute top-8 right-6"
                 onClick={() => setToggleMenu(false)}
               />
-              <div className="absolute top-36 left-6 flex flex-col text-secondary text-base font-barlow uppercase tracking-widest w-[91.5%]">
+              <div className="absolute top-36 left-6 flex flex-col text-secondary text-base font-sans uppercase tracking-widest w-[91.5%]">
                 <Link
                   href="/"
                   className={`${
